@@ -2,11 +2,6 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
-children = [
-  # ...
-  {MyBot, [method: :webhook, token: "TOKEN"]}
-]
-
 config :ex_gram, :webhook,
   allowed_updates: ["message", "poll"],       # array of strings
   certificate: "priv/cert/selfsigned.pem",    # string (file path)
