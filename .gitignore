@@ -24,3 +24,5 @@ emmaus-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+YOURPUBLIC.pem

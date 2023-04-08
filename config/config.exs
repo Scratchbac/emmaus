@@ -6,7 +6,7 @@ config :ex_gram, token: "6179960826:AAHwCUjcWv8rS9xgLb04uTx41-JFky3u7Cw"
 
 config :ex_gram, :webhook,
 #   allowed_updates: ["message", "poll"],       # array of strings
-#   certificate: "priv/cert/selfsigned.pem",    # string (file path)
+  certificate: "YOURPUBLIC.pem",    # string (file path)
 #   drop_pending_updates: false,                # boolean
 #   ip_address: "1.1.1.1",                      # string
 #   max_connections: 50,                        # integer
