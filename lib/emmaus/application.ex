@@ -7,9 +7,14 @@ defmodule Emmaus.Application do
 
   @impl true
   def start(_type, _args) do
+    token = case ExGram.Config.get(:ex_gram, :token) do
+      {module, func, env} -> apply(module, func, [env])
+      data -> data
+    end
+
     children = [
-      # ...
-      {MyBot, [method: :webhook, token: "TOKEN"]}
+      ExGram,
+      {Emmaus.Bot, [method: :polling, token: token]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
