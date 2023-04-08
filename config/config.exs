@@ -4,14 +4,14 @@ import Config
 
 config :ex_gram, token: "6179960826:AAHwCUjcWv8rS9xgLb04uTx41-JFky3u7Cw"
 
-# config :ex_gram, :webhook,
+config :ex_gram, :webhook,
 #   allowed_updates: ["message", "poll"],       # array of strings
 #   certificate: "priv/cert/selfsigned.pem",    # string (file path)
 #   drop_pending_updates: false,                # boolean
 #   ip_address: "1.1.1.1",                      # string
 #   max_connections: 50,                        # integer
 #   secret_token: "6179960826:AAHwCUjcWv8rS9xgLb04uTx41-JFky3u7Cw",      # string
-#   url: "bot.example.com"                      # string (only domain name)
+  url: "emmaus.fly.dev"                      # string (only domain name)
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
